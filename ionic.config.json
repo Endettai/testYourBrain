@@ -1,0 +1,7 @@
+{
+  "name": "testYourBrain",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
