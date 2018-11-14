@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { MainPage } from '../pages/main/main';
 
 // AoT requires an exported function for factories
 // export function HttpLoaderFactory(http: HttpClient) {
@@ -23,7 +24,8 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    MainPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ export function createTranslateLoader(http: HttpClient) {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    MainPage
   ],
   providers: [
     StatusBar,
