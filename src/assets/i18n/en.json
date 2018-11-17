@@ -1,4 +1,7 @@
 {
-  "refresh": "Refresh"
-  
+  "refresh": "Refresh",
+  "questionDimensionRespectYou" : "Di che dimensione è rispetto alla tua altezza?",
+  "small" : "Small",
+  "big" : "Big",
+  "giant": "Giant"
 }

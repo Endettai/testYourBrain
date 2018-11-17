@@ -1,3 +1,5 @@
+import { QuizPage } from './../pages/quiz/quiz';
+import { MenuPage } from './../pages/menu/menu';
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -10,7 +12,7 @@ import { MainPage } from '../pages/main/main';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = MainPage;
+  rootPage:any = QuizPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen,
     translateService: TranslateService) {

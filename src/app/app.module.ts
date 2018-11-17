@@ -1,3 +1,5 @@
+import { QuizPage } from './../pages/quiz/quiz';
+import { MenuPage } from './../pages/menu/menu';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -11,6 +13,8 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { MainPage } from '../pages/main/main';
+import { AdvertisingComponent } from '../components/advertising/advertising';
+import { SlideComponent } from '../components/slide/slide';
 
 // AoT requires an exported function for factories
 // export function HttpLoaderFactory(http: HttpClient) {
@@ -25,7 +29,10 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [
     MyApp,
     HomePage,
-    MainPage
+    MainPage,
+    MenuPage,
+    QuizPage,
+    AdvertisingComponent, SlideComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +50,8 @@ export function createTranslateLoader(http: HttpClient) {
   entryComponents: [
     MyApp,
     HomePage,
-    MainPage
+    QuizPage,
+    MainPage, MenuPage, AdvertisingComponent, SlideComponent
   ],
   providers: [
     StatusBar,

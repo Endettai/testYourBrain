@@ -1,0 +1,14 @@
+<!-- Generated template for the SlideComponent component -->
+<div class="container">
+  <div style="height: 200px;">
+      {{question.shortName | translate}}
+  </div>
+  <div>
+    <ion-list radio-group >
+        <ion-item *ngFor="let answer of question.answers">
+          <ion-label>{{answer.shortAnsw | translate}}</ion-label>
+          <ion-radio value="{{answer.shortAnsw}}"></ion-radio>
+        </ion-item>
+      </ion-list>
+  </div>
+</div>
