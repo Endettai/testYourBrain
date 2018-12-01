@@ -15,6 +15,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { MainPage } from '../pages/main/main';
 import { AdvertisingComponent } from '../components/advertising/advertising';
 import { SlideComponent } from '../components/slide/slide';
+import { QuizService } from '../services/quiz.service';
 
 // AoT requires an exported function for factories
 // export function HttpLoaderFactory(http: HttpClient) {
@@ -55,6 +56,7 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   providers: [
     StatusBar,
+    QuizService,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]

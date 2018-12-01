@@ -1,4 +1,6 @@
 export interface Quiz {
+    isFirst?: boolean;
+    scenarioId: number;
     shortName: string;
     question?: string;
     answers: {
@@ -6,4 +8,10 @@ export interface Quiz {
         shortAnsw: string;
         text?: string;
     }[];
+}
+
+export interface Scenario {
+    id: number;
+    title: string;
+    description: string;
 }

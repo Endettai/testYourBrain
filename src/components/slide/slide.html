@@ -1,14 +1,23 @@
-<!-- Generated template for the SlideComponent component -->
+
 <div class="container">
   <div style="height: 200px;">
+    <!-- <div>
       {{question.shortName | translate}}
+    </div> -->
+    <img (click)="onOpenScenario()" src="./assets/imgs/desert.jpg">
+    <ion-fab right top>
+      <button [disabled]="selectedItem == '' || !selectedItem" ion-fab (click)="onCommitSelect()">
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-fab>
   </div>
   <div>
-    <ion-list radio-group >
-        <ion-item *ngFor="let answer of question.answers">
-          <ion-label>{{answer.shortAnsw | translate}}</ion-label>
-          <ion-radio value="{{answer.shortAnsw}}"></ion-radio>
-        </ion-item>
-      </ion-list>
+    <ion-list radio-group (ionChange)="selectNewItem($event)">
+      <ion-item *ngFor="let answer of _question.answers">
+        <ion-label>{{answer.shortAnsw | translate}}</ion-label>
+        <ion-radio value="{{answer.shortAnsw}}" [checked]="answer.checked"></ion-radio>
+      </ion-item>
+    </ion-list>
   </div>
-</div>
+</div> 
+  

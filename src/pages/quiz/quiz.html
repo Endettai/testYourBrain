@@ -1,15 +1,13 @@
 
 <ion-content>
-  <!-- <div class="container">
-    <div class="main-content" padding> -->
-      <ion-slides 
-        [effect]="slideOptions.effect"
-        [zoom]="true">
-        <ion-slide *ngFor="let question of quiz; let index">
-          <slide [question]="question"></slide>
-        </ion-slide>
-      </ion-slides>
-    <!-- </div> -->
-    <!-- <advertising></advertising> 
-  </div> -->
+  <ion-slides #Slides
+    [effect]="slideOptions.effect"
+    [zoom]="true">
+    <ion-slide *ngFor="let question of quiz; let index"> 
+      <slide [question]="question"></slide>
+      <!-- <button ui-button (click)="goToSlide()">Click</button> -->
+    </ion-slide>
+  </ion-slides> 
+  <advertising></advertising> 
+  
 </ion-content>

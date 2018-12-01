@@ -1,4 +1,10 @@
 {
+  "scenarioCube": "Immagina di trovarti da solo in un deserto, quando all'improvviso avvisti un CUBO",
+  "scenarioLadder": "Dopo aver immaginato e impresso l'immagine del cubo nella tua mente, pensa ad una SCALA",
+  "scenarioHorse": "Tenendo in mente lo scenario appena immaginato, pensa ad un CAVALLO",
+  "scenarioBatterfly": "Tenendo in mente lo scenario appena immaginato, pensa ad una FARFALLA",
+  "scenarioFlower": "Tenendo in mente lo scenario appena immaginato, pensa a dei FIORI",
+  "scenarioSandStorm": "Tenendo in mente lo scenario appena immaginato, pensa ad una TEMPESTA DI SABBIA",
   "refresh": "Aggiorna",
   "questionDimensionRespectYou" : "Di che dimensione è rispetto alla tua altezza?",
   "ansSmall" : "Piccolo",
@@ -12,5 +18,21 @@
   "ansSunken" : "Infossato (Incassato) nella sabbia",
   "questionColor" : "Di che colore è?",
   "ansOpaque" : "Opaco",
-  "ansTransparent" : "Trasparente"
+  "ansTransparent" : "Trasparente",
+  "questionLadderPlace"  : "Dov'è posta la scala?",
+  "ansLadderNearby" : "Vicino al Cubo fino ad appoggiarsi",
+  "ansLadderFaraway" : "Lontana dal Cubo",
+  "questionLadderPosition" : "Qual è la sua esatta posizione, in relazione al Cubo?",
+  "ansLadderLow" : "Più in basso del Cubo",
+  "ansLadderSame" : "Allo stesso livello del Cubo",
+  "ansLadderHigh" : "Più in alto del Cubo",
+  "questionLadderHow" : "Com'è la scala?",
+  "ansLadderGoodCondition" : "In buone condizioni",
+  "ansLadderBadCondition" : "Vecchia e rovinata",
+  "questionLadderStepsCount" : "Quanti gradini ha la scala?",
+  "ansLadderStepsLowFive" : "Meno di 5",
+  "ansLadderStepsHighFive" : "Più di 5",
+  "questionLAdderStepsCondition" : "Come sono i gradini?",
+  "ansLAdderStepsGoodCondition" : "Solidi",
+  "ansLAdderStepsBadCondition" : "Fragili"
 }
